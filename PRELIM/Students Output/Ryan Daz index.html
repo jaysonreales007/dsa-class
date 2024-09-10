@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Activity 1 - Data Structure & </title>
+</head>
+<body>
+  <h1>Ryan Jake G.Daz</h1>
+  <h2>BSIT 2 - B</h2>
+  <h2>Data Structures and Algorithms</h2>
+  <h1>Activity 1</h1>
+  
+  <div id="boxone"></div>
+  <div id="boxtwo"></div>
+  <div id="boxthree"></div>
+
+  <script>
+    const boxone = document.getElementById('boxone');
+    const boxtwo = document.getElementById('boxtwo');
+    const boxthree = document.getElementById('boxthree');
+
+    boxone.style.width = '100px';
+    boxone.style.height = '100px';
+    boxone.style.backgroundColor = 'darkblue';
+    let myCcolor = setInterval(changecolor1, 3000);
+
+    function changecolor1 () {
+      let x = document.getElementById('boxone');
+      let colors = ["darkblue", "blue", "aqua"];
+      let nextColor = colors[(colors.indexOf(x.style.backgroundColor) + 1) % colors.length];
+
+        x.style.backgroundColor = nextColor;
+    }
+
+    boxtwo.style.width = '100px';
+    boxtwo.style.height = '100px';
+    boxtwo.style.backgroundColor = 'aqua';
+    let myCcolor2 = setInterval(changecolor2, 3000);
+
+    function changecolor2 () {
+      
+      let y = document.getElementById('boxtwo');
+      let colors2 = ["aqua", "darkblue", "blue"];
+      let nextColor2 = colors2[(colors2.indexOf(y.style.backgroundColor) + 1) % colors2.length];
+
+        y.style.backgroundColor = nextColor2;
+    }
+
+    boxthree.style.width = '100px';
+    boxthree.style.height = '100px';
+    boxthree.style.backgroundColor = 'blue';
+    let myCcolor3 = setInterval(changecolor3, 3000);
+
+    function changecolor3 () {
+      let z = document.getElementById('boxthree');
+      let colors3 = ["blue", "aqua", "darkblue"];
+      let nextColor3 = colors3[(colors3.indexOf(z.style.backgroundColor) + 1) % colors3.length];
+
+        z.style.backgroundColor = nextColor3;
+    }
+  </script>
+</body>
+</html>

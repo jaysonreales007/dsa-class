@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title> Data Structure & Algorithm</title>
+
+</head>
+
+    <body>
+
+        <h1 style="font-size:70px ;">Data Structure and Algorithm</h1>
+
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+
+    </body>
+
+    <script>
+
+const one = document.getElementById('one');
+    one.style.width = '500px';
+    one.style.height = '500px';
+    one.style.backgroundColor = 'red';
+
+    const two = document.getElementById('two');
+    two.style.width = '500px';
+    two.style.height = '500px';
+    two.style.backgroundColor = 'black';
+
+    const three = document.getElementById('three');
+    three.style.width = '500px';
+    three.style.height = '500px';
+    three.style.backgroundColor = 'green';
+
+    const divs = [one, two, three];
+    const colors = ["blue", "red", "green", "violet", "yellow"];
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+        divs.forEach((div, index) => {
+            div.style.backgroundColor = colors[(currentIndex + index) % colors.length];
+        });
+        currentIndex = (currentIndex + 1) % colors.length;
+    }, 3000);
+
+    </script>
+</html>

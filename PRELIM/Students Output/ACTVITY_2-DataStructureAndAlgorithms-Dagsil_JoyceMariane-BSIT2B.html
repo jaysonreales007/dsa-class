@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   <style>
+      h1 {
+         margin-bottom: 20px;
+         margin: 0;
+         text-align: center;
+      }
+      #color-container {
+         display: flex;
+         justify-content: center;
+      }
+   </style>
+
+</head>
+<body>
+	<h1 id="text" class="text">Data Structures & Algorithms in JavaScript</h1> 
+        
+        <div id="color-container">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        </div>
+
+	<script>
+		const colors = ['dodgerblue', 'fuchsia', 'aquamarine', 'cadetblue', 'darksalmon', 'turquoise'];
+		let clrs = 0;
+		function changeColor() {
+		 const one = document.getElementById('one')
+            one.style.width = '100px'
+            one.style.height = '100px'
+            one.style.backgroundColor =colors[clrs % colors.length];
+            
+         const two = document.getElementById('two') 
+            two.style.width = '100px'
+            two.style.height = '100px'
+            two.style.backgroundColor = colors[(clrs + 1) % colors.length];
+            
+        const three = document.getElementById('three') 
+            three.style.width = '100px'
+            three.style.height = '100px'
+            three.style.backgroundColor = colors[(clrs + 2) % colors.length];
+            clrs++;
+         }
+         setInterval(changeColor, 3000);
+	</script>
+
+</body>
+</html>

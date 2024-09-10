@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="text" class="text">Data Structures & Algorithms in JavaScript</h1> <!-- DSA in JavaScript -->
+		<!-- <p>Hello, World!</p> -->
+        
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+
+        <h1 id="welcomeMsg"></h1>
+        <form id="formLogin">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="submit" id="submit" value="submit">
+        </form>
+        
+        <script>
+            /* const // Constant or fixed variable
+            let // Empty variable
+            let age;
+            age = 12;
+
+            // This will get the <h1> element in the HTML
+            const text = document.getElementById('text');
+
+            text.innerText = 'DSA in JavaScript'; // This will change the content of <h1> element to 'DSA in JavaScript'
+            text.style.color = 'crimson' // This will add color to the element content
+            console.log(text) // This will display the 'text' variable containing the <h1> element
+            
+            const one = document.getElementById('one') 
+            one.style.width = '100px'
+            one.style.height = '100px'
+            one.style.backgroundColor = 'dodgerblue'
+            
+            const two = document.getElementById('two') 
+            two.style.width = '100px'
+            two.style.height = '100px'
+            two.style.backgroundColor = 'fuchsia'
+            
+            const three = document.getElementById('three') 
+            three.style.width = '100px'
+            three.style.height = '100px'
+            three.style.backgroundColor = 'crimson'
+
+            // Event Listener
+
+            // Comment - use ALT + Shift + A for multiple line comment
+
+            // Control Structure
+            // const name = "Juan";
+            // const name2 = "juan"
+
+
+            // const defUname = 'admin' 
+            // const defPass = '123'
+
+            // const form = document.getElementById('formLogin');
+
+            // form.addEventListener('submit', function(event) { // add submit event listener to form 
+            //     event.preventDefault(); // prevent the page from loading when the user click the submit button
+
+            //     const uname = document.getElementById('username').value; // get the user input using the 'value' keyword
+            //     const pass = document.getElementById('password').value;
+                    
+            //     console.log(uname, pass)
+
+            //     const u = uname;
+
+            //     switch(uname) {
+            //         case defUname:
+            //             if(uname === defUname) {
+            //                 alert('Female')
+            //             }
+            //             break;
+            //         default:
+            //             alert('Eyyyyyyyyyyyyyy')
+                    
+            //     }
+
+            //     if(uname === defUname && pass === defPass) {
+            //         alert('Female')
+
+            //         window.location = 'https://google.com'
+            //     } else {
+            //         alert('Male')
+            //     }
+            // })
+
+            // if(name === name2) {
+            //     alert('Correct')
+            // } else {
+            //     alert('Mali')
+            // } */
+
+            /* const myFunc = (name === name2) ? 'True' : 'False' // Ternary Operator */
+            
+            /* for(let i = 10; i >= 0; i--) { // Use let when using FOR LOOP
+                console.log(i)
+            } */
+
+            /* JavaScript Function */
+            /* function - anythis that has parenthesis '()'
+            built-in function - package that is built for the PL itself
+            user-defined function - dev is the one who defined the function name */
+
+            /* function divFunc(n1, n2) { // Function Declaration
+                return n1 / n2
+            }
+
+            console.log(divFunc(45, 9)) // Function calling */
+
+            const form = document.getElementById('formLogin')
+            const welcomeMsg = document.getElementById('welcomeMsg')
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault()
+
+                const name = document.getElementById('name').value
+
+                function displayName(n) {
+                    for(let i = 0; i <= 5; i++) {
+                        const a = document.createElement('p')
+                        a.innerText = `Hello there, ${n}`
+                        welcomeMsg.appendChild(a)
+                    }
+                    <p>Hello there...</p>
+                }
+
+                displayName(name)
+            })
+        </script>
+	</body>	
+</html>
